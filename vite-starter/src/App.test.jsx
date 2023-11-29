@@ -10,7 +10,7 @@ import App from './App';
 
 test('App contains correct heading', () => {
   render(<App />);
-  const headingElement = screen.getByText(/learn react/i);
+  const headingElement = screen.getByRole('heading', { name: /learn react/i });
 
   // assertion which determines if test pass or fail
   // (linkElement) - expect argument(subject of the assertion)
